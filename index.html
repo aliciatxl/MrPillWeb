@@ -18,14 +18,6 @@
 
 	<style>
 
-	.jumbotron {
-
-		background-image: url(background.jpg);
-		background-size:cover;
-		margin-top: 50px;
-		text-align: center;
-	}
-
 	#about {
 		background-color: #eff4fc;
 		padding: 70px 30px;
@@ -46,8 +38,14 @@
 	}
 
 	#appSummary {
-		text-align: center;
-		padding: 30px;
+		text-align: left;
+		padding: 70px 30px;
+		float: left;
+		position: relative;
+	}
+
+	#video {
+		float: left;
 	}
 
 	#appStoreIcon {
@@ -69,6 +67,26 @@
 
 	#screenshots {
 		background-color: #9bdaf2;
+	}
+
+	.jumbotron {
+		background-image: url(Images/background.jpg);
+		background-size:cover;
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	.card-header {
+		background-color: #3EA3D3;
+	}
+
+	.card-header button {
+		color: #d9e5f7;
+	}
+
+	.card-header button:hover {
+		color: #fff;
+		text-decoration: none;
 	}
 
 	.card-img-top {
@@ -136,7 +154,7 @@
 	</nav>
 
 	<div class="jumbotron" id="jumbotron">
-		<img src="MrPillLogo.png" id="MrPillLogo"></img>
+		<img src="Images/MrPillLogo.png" id="MrPillLogo"></img>
 		<h1 class="display-3">Mr Pill App</h1>
 		<p class="lead">Learn to differentiate and manage common ailments now!</p>
 		<hr class="m-y-2">
@@ -157,14 +175,16 @@
 	</div>
 
 	<div class="container">
-
 		<div class="row" id="appSummary">
-
-			<h1>Why You Should Download This App</h1>
-			<p>Many of us are unable to distinguish <span class="text-primary"><strong>minor ailments</strong></span> from more serious illnesses and unaware of how to <span class="text-primary"><strong>manage them.</strong></span><br>Therefore, we hope to provide an engaging education resource on <span class="text-primary"><strong>differentiating and managing common ailments</strong></span> so that individuals can recognise and manage them when the need arises. <br>Our mobile app enables users to learn about managing common medical ailments in an <strong><span class="text-primary">engaging manner.</strong></span></p>
-
+			<div class="col-sm-6">
+				<h1>Why You Should Download This App</h1>
+				<hr class="m-y-1">
+				<p>Many of us are unable to distinguish <span class="text-primary"><strong>minor ailments</strong></span> from more serious illnesses and unaware of how to <span class="text-primary"><strong>manage them.</strong></span><br>Therefore, we hope to provide an engaging education resource on <span class="text-primary"><strong>differentiating and managing common ailments</strong></span> so that individuals can recognise and manage them when the need arises. <br>Our mobile app enables users to learn about managing common medical ailments in an <strong><span class="text-primary">engaging manner.</span></strong></p>
+			</div>
+			<div class="col-sm-6" id="video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/UspMFCfx44g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
 		</div>
-
 	</div>
 
 	<div class="container-fluid" id="about">
@@ -173,7 +193,7 @@
 			<div class="card-deck-wrapper">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="coughAndCold.png" alt="Card image cap">
+						<img class="card-img-top" src="Images/coughAndCold.png" alt="Card image cap">
 						<div class="card-block">
 							<h4 class="card-title"><i class="fas fa-tint"></i> Cough and Cold</h4>
 							<p class="card-text">Learn about what causes a cold, how to prevent it and how to relieve the symptoms...</p>
@@ -181,7 +201,7 @@
 						</div>
 					</div>
 					<div class="card">
-						<img class="card-img-top" src="dryEye.jpg" alt="Card image cap">
+						<img class="card-img-top" src="Images/dryEye.jpg" alt="Card image cap">
 						<div class="card-block">
 							<h4 class="card-title"><i class="far fa-eye"></i> Dry Eyes</h4>
 							<p class="card-text">Learn about the common causes of dry eyes and how to manage it every day...</p>
@@ -189,7 +209,7 @@
 						</div>
 					</div>
 					<div class="card">
-						<img class="card-img-top" src="stomachConditions.png" alt="Card image cap">
+						<img class="card-img-top" src="Images/stomachConditions.png" alt="Card image cap">
 						<div class="card-block">
 							<h4 class="card-title"><i class="fas fa-procedures"></i> Stomach Conditions</h4>
 							<p class="card-text">Learn why do some people commonly have heartburn after a meal, when to go to a doctor and how to prevent gastric reflux...</p>
@@ -253,27 +273,27 @@
 		<div class="container-fluid" id="rewards">
 			<h2>Get rewarded at certain checkpoints</h2>
 			<p class="lead">Currently available</p>
-			<img src="mrBean.png" class="vouchers"></img>
-			<img src="greenDot.png" class="vouchers"></img>
-			<img src="poke.jpg" class="vouchers"></img>
+			<img src="Images/mrBean.png" class="vouchers"></img>
+			<img src="Images/greenDot.png" class="vouchers"></img>
+			<img src="Images/poke.jpg" class="vouchers"></img>
 		</div>
 
 		<div class="container-fluid" id="screenshots">
 			<div id="carouselControls" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="d-block w-50" src="app1.png" alt="First slide">
+						<img class="d-block w-50" src="Images/app1.png" alt="First slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-50" src="app2.png" alt="Second slide">
+						<img class="d-block w-50" src="Images/app2.png" alt="Second slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-50" src="app3.png" alt="Third slide">
+						<img class="d-block w-50" src="Images/app3.png" alt="Third slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-50" src="app4.png" alt="Third slide">
+						<img class="d-block w-50" src="Images/app4.png" alt="Third slide">
 					</div><div class="carousel-item">
-						<img class="d-block w-50" src="app5.png" alt="Third slide">
+						<img class="d-block w-50" src="Images/app5.png" alt="Third slide">
 					</div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
@@ -291,7 +311,7 @@
 			<div class="row">
 				<h2>Download the app now</h2>
 				<p class="lead">Empower yourself with health management knowledge</p>
-				<p><a href=""><img id="appStoreIcon" src="MrPillLogo.png"></a></p>
+				<p><a href=""><img id="appStoreIcon" src="Images/MrPillLogo.png"></a></p>
 				<p class="text-muted">&copy; Mr Pill 2018</p>
 			</div>
 		</div>
