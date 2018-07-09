@@ -18,6 +18,40 @@
 
 	<style>
 
+	@media screen and (max-width: 1200px) {
+	    iframe {
+	         width: 300px;
+	    }
+	   
+	    .light-text {
+	    	color: #fff;
+	    }
+	}
+
+	@media screen and (max-width: 800px) {
+	    iframe {
+	         width: 200px;
+	    }
+	   
+	    .light-text {
+	    	color: #fff;
+	    }
+	}
+
+	@media screen and (max-width: 550px) {
+	    iframe {
+	         width: 200px;
+	    }
+	    .jumbotron {
+	    	padding-top: 200px;
+	    }
+
+	    .light-text {
+	    	color: #fff;
+	    }
+	}
+	
+
 	#about {
 		background-color: #eff4fc;
 		padding: 70px 30px;
@@ -124,9 +158,15 @@
 		margin-right:0;
 	}
 
+	.button-wrap {
+		 white-space: normal !important;
+	    word-wrap: break-word !important;
+	}
+
 	body {
 		position: relative;
 	}
+
 </style>
 
 </head>
@@ -160,7 +200,7 @@
 		<hr class="m-y-2">
 		<p>When you are suffering from an illness, have you ever found yourself fishing out your phone and googling in an attempt to understand and find solutions for it?<br>However, have you ever felt more lost and intimidated by the information online?<br>Or are you curious about how you can prevent the occurrence and recurrence of similar illnesses in the future?</p>
 
-		<p class="text-muted">Sign up for our mailing list to find out more!</p>
+		<p class="text-muted light-text">Sign up for our mailing list to find out more!</p>
 
 		<form class="form-inline">
 			<div class="form-group">
@@ -227,8 +267,8 @@
 				<div class="card">
 					<div class="card-header" id="headingOne">
 						<h5 class="mb-0">
-							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								Which of the following (abrupt onset, high fever, severe headache, sore throat) is a common feature of common cold?
+							<button class="btn btn-link button-wrap" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<span class="buttontext">Which of the following (abrupt onset, high fever, severe headache, sore throat) is a common feature of common cold?</span>
 							</button>
 						</h5>
 					</div>
@@ -242,7 +282,7 @@
 				<div class="card">
 					<div class="card-header" id="headingTwo">
 						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<button class="btn btn-link collapsed button-wrap" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 								What should you do and not do during a fever?
 							</button>
 						</h5>
@@ -256,7 +296,7 @@
 				<div class="card">
 					<div class="card-header" id="headingThree">
 						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							<button class="btn btn-link collapsed button-wrap" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 								What should you do to avoid allergens?
 							</button>
 						</h5>
